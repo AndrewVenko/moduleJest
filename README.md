@@ -95,3 +95,9 @@ test_script:
 
 ## Добавим беджик
 Сайт appveyor > проект > settings > третий бейджик
+
+## Установим Husky
+Установим husky - пакет для автоматического запуска других пакетов или команд. npm install --save-dev husky. Пропишем скрипт: "prepare": "husky install". Запускае скрипт: npm run prepare.
+
+## Добавим запуск пр пуше теста и eslint
+пропушем в hucky команду запуска тестов и eslint: npx husky add .husky\pre-commit "npm run lint && npm test"
