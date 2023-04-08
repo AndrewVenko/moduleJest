@@ -1,4 +1,4 @@
-import { calculateTotal } from '../src/calculate.js';
+import calculateTotal from '../src/calculate';
 // Структура файла тестов
 // функция test(description, work)
 // тоесть идет описание функции и что в ней должно производится
@@ -21,7 +21,7 @@ test('calculateTotal sum', () => {
       name: 'JavaScript',
       count: 1,
       price: 1300,
-    }
+    },
   ];
 
   const result = calculateTotal(list);
